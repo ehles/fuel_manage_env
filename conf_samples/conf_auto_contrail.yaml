@@ -48,6 +48,29 @@ plugins:
     enabled: true
     version: 5.0.0
     attributes:
+      # dc_name: # text value
+      # dpdk_on_vf: false # false/true
+      # tor_agents_configurations: "" # text value
+      # dvs_internal: "Contrail-DVS-Int" # here is defaule value
+      # contrail_single_gateway: "" # text value
+      # contrail_route_target: 10000 # text value
+      # contrail_global_dpdk: false/true
+      # aaa_mode: # select rbac/cloud-admin
+      # patch_nova: false/true
+      # contrail_gateways: # text value
+      # vrouter_core_mask:
+      # contrail_asnum:
+      # esxi_uplink_priv:
+      # dvs_private:
+      # contrail_external:
+      # esxi_uplink_ext:
+      # contrail_api_public_port:
+      # dvs_external:
+      # enable_tor_agents:
+      # dpdk_physnet:
+      # provision_networks:
+      # install_contrail_qemu_lv:
+      # esxi_datastore_name:
       dedicated_analytics_db: true
 
 nets:
