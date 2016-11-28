@@ -49,7 +49,7 @@ plugins:
     version: 5.0.0
     attributes:
       # dc_name: # text value
-      # dpdk_on_vf: false # false/true
+      dpdk_on_vf: false # false/true
       # tor_agents_configurations: "" # text value
       # dvs_internal: "Contrail-DVS-Int" # here is defaule value
       # contrail_single_gateway: "" # text value
@@ -71,7 +71,6 @@ plugins:
       # provision_networks:
       # install_contrail_qemu_lv:
       # esxi_datastore_name:
-      dedicated_analytics_db: true
 
 nets:
   public:
@@ -130,9 +129,7 @@ roller:
     l3_ifaces:
       phys_nic_map: *default_compute_one
     roles:
-      - contrail-db
-      - contrail-config
-      - contrail-control
+      - contrail-controler
       - contrail-analytics
       - contrail-analytics-db
     count: 3
